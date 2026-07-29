@@ -17,6 +17,7 @@
         /* Navigation Styles */
         nav { display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 5%; background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(10px); position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 1px solid rgba(255,255,255,0.1); }
         .logo { text-decoration: none; display: flex; align-items: center; }
+        .logo-icon { height: 42px; width: auto; margin-right: 0.65rem; }
         .logo span { color: var(--primary); }
 
         .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
@@ -64,8 +65,22 @@
         .partner-callout a { color: var(--primary); font-weight: 600; font-size: 0.85rem; text-decoration: none; }
         .partner-callout a:hover { text-decoration: underline; }
 
+        .funding-callout {
+            position: absolute; right: 3%; top: 50%; transform: translateY(-50%);
+            width: 300px; z-index: 3; text-align: left;
+            background: rgba(255,255,255,0.92); backdrop-filter: blur(8px);
+            border: 1px solid rgba(245,166,35,0.35); border-radius: 12px;
+            padding: 1.25rem 1.4rem; box-shadow: 0 10px 25px rgba(15,23,42,0.08);
+        }
+        .funding-callout .callout-tag {
+            font-size: 0.7rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+            color: #b45309; margin-bottom: 0.6rem;
+        }
+        .funding-callout p { color: #334155; font-size: 0.85rem; line-height: 1.5; margin-bottom: 0; }
+
         @media (max-width: 1150px) {
             .partner-callout { position: static; transform: none; width: 90%; max-width: 420px; margin: 2rem auto 0; }
+            .funding-callout { position: static; transform: none; width: 90%; max-width: 420px; margin: 1rem auto 0; }
             .hero { flex-direction: column; height: auto; min-height: 100vh; padding: 7rem 1rem 2rem; }
         }
         .hero-content { position: relative; z-index: 2; max-width: 800px; color: #0f172a; }
@@ -250,6 +265,7 @@ function switchTab(tab, evt) {
     <!-- Navigation Bar -->
     <nav>
         <a href="#home" class="logo">
+    <img src="logo1.png" alt="Balance Mat icon" class="logo-icon">
     <div class="logo-text">
         <div class="logo-title">Balance Mat</div>
         <div class="logo-tagline">LIVE WELL LONGER</div>
@@ -285,7 +301,7 @@ function switchTab(tab, evt) {
             <div class="dropdown">
                 <a href="#" onclick="toggleDropdown(event)">Our Partners ▾</a>
                 <div class="dropdown-menu">
-                    <a href="vestec-medical.html">Vestec Medical</a>
+                    <a href="vestech-medical.html">Vestec Medical</a>
                     <a href="avant-group.html">Avant Group</a>
                     <a href="university-of-canberra.html">University of Canberra</a>
                 </div>
@@ -322,7 +338,12 @@ function switchTab(tab, evt) {
         <div class="partner-callout">
             <div class="callout-tag">Partnership Opportunity</div>
             <p>We are seeking commercial partners to help us commercialise our Balance Mat as a screening tool for type 2 diabetics.</p>
-            <a href="#contact">Get in touch →</a>
+            <a href="diabetes.html">Get Info →</a>
+        </div>
+
+        <div class="funding-callout">
+            <div class="callout-tag">Government &amp; Investor Backed</div>
+            <p>Proudly supported by the Australian Government since 2016, Balance Mat Pty Ltd has received over $1.7 million in government funding, alongside $1.9 million from private investors, driving innovation and advancing our world-leading balance assessment technology.</p>
         </div>
     </section>
 
