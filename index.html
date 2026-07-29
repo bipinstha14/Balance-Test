@@ -89,6 +89,8 @@
         .hero p { font-size: 1.25rem; color: #475569; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; }
         .btn { background: var(--primary); color: white; padding: 0.8rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: transform 0.2s, background 0.2s; border: none; cursor: pointer; }
         .btn:hover { background: #0077ed; transform: translateY(-2px); }
+        .hero-product-img { display: block; margin: 2.75rem auto 0; max-width: 300px; width: 55%; border-radius: 18px; box-shadow: 0 20px 40px rgba(15,23,42,0.18); }
+        @media (max-width: 768px) { .hero-product-img { width: 65%; max-width: 220px; margin-top: 2rem; } }
 
         /* Interactive Section */
         .interactive-section { padding: 5rem 5%; background: #ffffff; color: var(--dark); text-align: center; }
@@ -325,14 +327,12 @@ function switchTab(tab, evt) {
 
     <!-- Visual Hero Area -->
     <section id="home" class="hero">
-        <video autoplay muted loop playsinline style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; transform: translate(-50%, -50%); object-fit: cover; z-index: 1; opacity: 0.08;">
-            <source src="Promo video.mp4" type="video/mp4">
-        </video>
         <div class="hero-content">
             <div class="badge">TGA Approved • Australian Made</div>
             <h1>Next-Generation Postural Sway Metrics</h1>
             <p>Revolutionary fiber-optic technology measuring balance and falls risk with automated, objective data in under 20 seconds.</p>
             <a href="#solutions" class="btn">Explore Dynamic Solutions</a>
+            <img src="balance-mat-product.jpg" alt="Balance Mat sensor pad" class="hero-product-img">
         </div>
 
         <div class="partner-callout">
