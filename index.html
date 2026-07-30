@@ -51,6 +51,9 @@
         .hero { background: radial-gradient(circle at center, #ffffff 0%, #f1f5f9 100%); position: relative; height: 100vh; display: flex; align-items: center; justify-content: space-between; gap: 3rem; padding: 0 5%; overflow: hidden; }
 
         .hero-left { width: 48%; display: flex; flex-direction: column; gap: 1.25rem; z-index: 3; }
+        @media (min-width: 1151px) {
+            .hero-left { transform: translateY(10%); margin-top: 1.5rem; }
+        }
 
         .partner-callout {
             width: 100%; text-align: left;
@@ -67,24 +70,12 @@
         .partner-callout a { color: var(--primary); font-weight: 600; font-size: 0.85rem; text-decoration: none; }
         .partner-callout a:hover { text-decoration: underline; }
 
-        .funding-callout {
-            width: 100%; text-align: left;
-            background: rgba(255,255,255,0.92); backdrop-filter: blur(8px);
-            border: 1px solid rgba(245,166,35,0.35); border-radius: 12px;
-            padding: 1.25rem 1.4rem; box-shadow: 0 10px 25px rgba(15,23,42,0.08);
-            box-sizing: border-box;
-        }
-        .funding-callout .callout-tag {
-            font-size: 0.7rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
-            color: #b45309; margin-bottom: 0.6rem;
-        }
-        .funding-callout p { color: #334155; font-size: 0.85rem; line-height: 1.5; margin-bottom: 0; }
         .hero-quote { margin: 2.5rem 0 0; max-width: 560px; font-size: 1.15rem; font-style: italic; color: #1e293b; line-height: 1.5; border-left: 3px solid var(--primary); padding-left: 1.25rem; text-align: left; }
         .hero-quote footer { margin-top: 0.75rem; font-size: 0.85rem; font-style: normal; font-weight: 600; color: #64748b; }
 
         @media (max-width: 1150px) {
             .hero { flex-direction: column; height: auto; min-height: 100vh; padding: 7rem 1rem 2rem; gap: 2rem; }
-            .hero-left { width: 90%; max-width: 420px; order: 2; }
+            .hero-left { width: 90%; max-width: 420px; order: 2; transform: none; margin-top: 0; }
             .hero-content { width: 90%; max-width: 420px; order: 1; text-align: center !important; transform: none !important; }
             .hero-content p, .hero-quote { margin-left: auto; margin-right: auto; text-align: center; }
         }
@@ -339,11 +330,6 @@ function switchTab(tab, evt) {
                 <p>The scientific abstract ‘Portable, scalable postural sway assessment for population level identification of balance instability in adults with type 2 diabetes: an exploratory analysis’ is being presented at the international diabetes conference IDF-WPR 2026 & ADC 2026 & Metabolic Diseases, at the Melbourne Convention and Exhibition Centre 18-21 August 2026. The lead author Dr Tshepo Rasekaba will be available to discuss his research.
 We are seeking commercial partners to help us commercialise the Balance Mat as a screening tool for type 2 diabetes. Contact Vestech Medical Pty Ltd.</p>
                 <a href="vestech-medical.html">More Info →</a>
-            </div>
-
-            <div class="funding-callout">
-                <div class="callout-tag">Government &amp; Investor Backed</div>
-                <p>Proudly supported by the Australian Government since 2016, Balance Mat Pty Ltd has received over $1.7 million in government funding, alongside $1.9 million from private investors, driving innovation and advancing our world-leading balance assessment technology.</p>
             </div>
         </div>
 
