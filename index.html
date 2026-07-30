@@ -51,8 +51,8 @@
         .hero { background: radial-gradient(circle at center, #ffffff 0%, #f1f5f9 100%); position: relative; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 1rem; overflow: hidden; }
 
         .partner-callout {
-            position: absolute; left: 3%; top: 32%;
-            width: 260px; z-index: 3; text-align: left;
+            position: absolute; left: 3%; top: 18%;
+            width: 340px; z-index: 3; text-align: left;
             background: rgba(255,255,255,0.92); backdrop-filter: blur(8px);
             border: 1px solid rgba(0,113,227,0.25); border-radius: 12px;
             padding: 1.25rem 1.4rem; box-shadow: 0 10px 25px rgba(15,23,42,0.08);
@@ -61,12 +61,12 @@
             font-size: 0.7rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
             color: var(--primary); margin-bottom: 0.6rem;
         }
-        .partner-callout p { color: #334155; font-size: 0.88rem; line-height: 1.5; margin-bottom: 0.85rem; }
+        .partner-callout p { color: #334155; font-size: 0.8rem; line-height: 1.5; margin-bottom: 0.85rem; }
         .partner-callout a { color: var(--primary); font-weight: 600; font-size: 0.85rem; text-decoration: none; }
         .partner-callout a:hover { text-decoration: underline; }
 
         .funding-callout {
-            position: absolute; right: 3%; top: 32%;
+            position: absolute; right: 3%; top: 18%;
             width: 300px; z-index: 3; text-align: left;
             background: rgba(255,255,255,0.92); backdrop-filter: blur(8px);
             border: 1px solid rgba(245,166,35,0.35); border-radius: 12px;
@@ -86,8 +86,11 @@
             .hero { flex-direction: column; height: auto; min-height: 100vh; padding: 7rem 1rem 2rem; }
         }
         .hero-content { position: relative; z-index: 2; max-width: 800px; color: #0f172a; }
+        @media (min-width: 1151px) {
+            .hero-content { transform: translate(-8%, 25%); }
+        }
         .badge { background: rgba(0, 113, 227, 0.1); border: 1px solid var(--primary); color: var(--primary); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.85rem; display: inline-block; margin-bottom: 1.5rem; text-transform: uppercase; font-weight: 600; }
-        .hero h1 { font-size: 3.5rem; font-weight: 800; line-height: 1.1; margin-bottom: 1.5rem; color: #0f172a; }
+        .hero h1 { font-size: 2.6rem; font-weight: 800; line-height: 1.1; margin-bottom: 1.5rem; color: #0f172a; }
         .hero p { font-size: 1.25rem; color: #475569; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; }
         .btn { background: var(--primary); color: white; padding: 0.8rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: transform 0.2s, background 0.2s; border: none; cursor: pointer; }
         .btn:hover { background: #0077ed; transform: translateY(-2px); }
