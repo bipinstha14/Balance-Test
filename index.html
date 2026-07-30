@@ -70,8 +70,46 @@
         .partner-callout a { color: var(--primary); font-weight: 600; font-size: 0.85rem; text-decoration: none; }
         .partner-callout a:hover { text-decoration: underline; }
 
-        .hero-quote { margin: 2.5rem 0 0; max-width: 560px; font-size: 1.15rem; font-style: italic; color: #1e293b; line-height: 1.5; border-left: 3px solid var(--primary); padding-left: 1.25rem; text-align: left; }
-        .hero-quote footer { margin-top: 0.75rem; font-size: 0.85rem; font-style: normal; font-weight: 600; color: #64748b; }
+        .hero-quote { 
+    margin: 2.5rem 0 0; 
+    max-width: 560px; 
+    font-size: 1.15rem; 
+    font-style: italic; 
+    color: #1e293b; 
+    line-height: 1.5; 
+    border-left: 3px solid var(--primary); 
+    padding-left: 1.25rem; 
+    text-align: left; 
+}
+
+/* Main quote text */
+.quote-text {
+    margin-bottom: 1rem;
+}
+
+/* Smaller citation text */
+.hero-quote cite {
+    display: block;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 1rem;
+}
+
+/* More Info link at bottom */
+.quote-link {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.quote-link:hover {
+    text-decoration: underline;
+}
 
         @media (max-width: 1150px) {
             .hero { flex-direction: column; height: auto; min-height: 100vh; padding: 7rem 1rem 2rem; gap: 2rem; }
@@ -338,10 +376,19 @@ function switchTab(tab, evt) {
             <h1>Next-Generation Postural Sway Metrics</h1>
             <p>Revolutionary fibre-optic technology that measures postural sway across various stances, providing automated, objective data in a matter of minutes.</p>
             <blockquote class="hero-quote">
-                "The Balance Mat will fundamentally change the way we measure and understand human balance."
-                <cite>— Professor Damith Herath, University of Canberra · LinkedIn Post, July 2026</cite>
-                <a href="university-of-canberra.html">More Info →</a>
-            </blockquote>
+    <div class="quote-text">
+        "The Balance Mat will fundamentally change the way we 
+        measure and understand human balance."
+    </div>
+
+    <cite>
+        — Professor Damith Herath, University of Canberra · LinkedIn Post, July 2026
+    </cite>
+
+    <a href="university-of-canberra.html" class="quote-link">
+        More Info →
+    </a>
+</blockquote>
                 
         </div>
     </section>
