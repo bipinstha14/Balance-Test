@@ -26,6 +26,25 @@
         .nav-links { display: flex; align-items: center; list-style: none; }
         .nav-links a { color: var(--light); text-decoration: none; margin-left: 2rem; font-size: 0.9rem; transition: color 0.3s; }
         .nav-links a:hover { color: var(--primary); }
+
+        .login-btn {
+    position: fixed;
+    top: 70px; /* adjust based on your nav height */
+    right: 5%;
+    background: var(--primary);
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    z-index: 999;
+    transition: background 0.2s, transform 0.2s;
+}
+.login-btn:hover {
+    background: #0077ed;
+    transform: translateY(-2px);
+}
         
         /* Dropdown CSS Configuration */
         .dropdown { position: relative; display: inline-block; }
@@ -359,6 +378,10 @@ function switchTab(tab, evt) {
             <a href="#contact">Contact</a>
         </div>
     </nav>
+
+    </nav>
+
+<a href="https://balancemat.org" target="_blank" class="login-btn">Log In</a>
 
     <!-- Visual Hero Area -->
     <section id="home" class="hero">
